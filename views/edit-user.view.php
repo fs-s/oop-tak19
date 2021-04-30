@@ -1,10 +1,10 @@
-<h1><?= $task->description; ?></h1>
+<h1><?= $user->name; ?></h1>
 
 <form action="edit" method="POST">
 
-    <input type="hidden" name="id" value="<?= $task->id; ?>">
+    <input type="hidden" name="id" value="<?= $user->id; ?>">
 
-    <input type="text" name="description" value="<?= $task->description; ?>">
+    <input type="text" name="name" value="<?= $user->name; ?>">
 
     <button type="submit" name="save">Save</button>
 
