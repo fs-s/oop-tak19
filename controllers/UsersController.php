@@ -19,7 +19,7 @@ class UsersController {
         $app['database']->insert('users', [
             'name' => $_POST['name'],
         ]);
-        
+
         return redirect('users');
     }
 
@@ -48,8 +48,8 @@ class UsersController {
         global $app;
 
         $app['database']->delete('users', $_GET['id']);
-        
+
         return redirect('users');
-    }    
+    }
 
 }

@@ -4,8 +4,8 @@
         <?php foreach ( $tasks as $task ) : ?>
             <li>
                 <?= $task->description; ?>
-                <a href="/users/delete?id=<?= $task->id; ?>">delete</a>
-                <a href="/users/edit?id=<?= $task->id; ?>">edit</a>
+                <a href="/tasks/delete?id=<?= $task->id; ?>">delete</a>
+                <a href="/tasks/edit?id=<?= $task->id; ?>">edit</a>
             </li>
         <?php endforeach; ?>
     </ul>
